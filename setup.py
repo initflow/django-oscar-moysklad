@@ -10,14 +10,15 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 import os
 thelibFolder = os.path.dirname(os.path.realpath(__file__))
-requirementPath = thelibFolder + '/requirements.txt.txt'
+requirementPath = thelibFolder + '/requirements.txt'
+install_requires = []
 if os.path.isfile(requirementPath):
     with open(requirementPath) as f:
         install_requires = f.read().splitlines()
 
 setup(
     name='django_oscar_moysklad',
-    version='0.2',
+    version='0.2.5',
     packages=find_packages(),
     include_package_data=True,
     license='BSD License',  # example license
