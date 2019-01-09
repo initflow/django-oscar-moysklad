@@ -1,1 +1,2 @@
-# default_app_config = 'apps.SynchronizerConfig'
+
+name = "django_oscar_moysklad"
